@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPS.SDK", "UPS.SDK\UPS.SDK.csproj", "{D6A13940-D00C-4BE5-B5BD-4038C9745799}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPS.SDK.Test", "UPS.SDK.Test\UPS.SDK.Test.csproj", "{9FD155A4-9853-4BD1-896C-922F14E7D9CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPS.SDK.Tests", "UPS.SDK.Tests\UPS.SDK.Tests.csproj", "{097B5B34-E301-4529-95DB-6F730B62DA07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6A13940-D00C-4BE5-B5BD-4038C9745799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A13940-D00C-4BE5-B5BD-4038C9745799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A13940-D00C-4BE5-B5BD-4038C9745799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A13940-D00C-4BE5-B5BD-4038C9745799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD155A4-9853-4BD1-896C-922F14E7D9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD155A4-9853-4BD1-896C-922F14E7D9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD155A4-9853-4BD1-896C-922F14E7D9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD155A4-9853-4BD1-896C-922F14E7D9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{097B5B34-E301-4529-95DB-6F730B62DA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097B5B34-E301-4529-95DB-6F730B62DA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097B5B34-E301-4529-95DB-6F730B62DA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097B5B34-E301-4529-95DB-6F730B62DA07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD5E3806-E084-490B-B4A1-41B51ADB00B5}
+	EndGlobalSection
+EndGlobal

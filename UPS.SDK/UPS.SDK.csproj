@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6A13940-D00C-4BE5-B5BD-4038C9745799}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UPS.SDK</RootNamespace>
+    <AssemblyName>UPS.SDK</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="City\AVRResultEntity.cs" />
+    <Compile Include="City\CityAddressEntity.cs" />
+    <Compile Include="City\CityProvider.cs" />
+    <Compile Include="City\CityValidateEntity.cs" />
+    <Compile Include="DataResult.cs" />
+    <Compile Include="EResponseCode.cs" />
+    <Compile Include="FileItem.cs" />
+    <Compile Include="ITopClient.cs" />
+    <Compile Include="ITopRequest.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="LBRecovery\LabelRecoveryRequestEntity.cs" />
+    <Compile Include="LBRecovery\LBRecoverResultEntity.cs" />
+    <Compile Include="LBRecovery\LBRecoveryProvider.cs" />
+    <Compile Include="LBRecovery\TranslateEntity.cs" />
+    <Compile Include="PublishRateShipment\PAddressEntity.cs" />
+    <Compile Include="PublishRateShipment\PDimensionsEntity.cs" />
+    <Compile Include="PublishRateShipment\PPackageEntity.cs" />
+    <Compile Include="PublishRateShipment\PPackageWeightEntity.cs" />
+    <Compile Include="PublishRateShipment\PPhoneEntity.cs" />
+    <Compile Include="PublishRateShipment\PShipmentEntity.cs" />
+    <Compile Include="PublishRateShipment\PShipperAddressEntity.cs" />
+    <Compile Include="PublishRateShipment\PublishResultEntity.cs" />
+    <Compile Include="PublishRateShipment\PublishShipProvider.cs" />
+    <Compile Include="PublishRateShipment\PublishShipRequestEntity.cs" />
+    <Compile Include="Rate\PackageWeightEntity.cs" />
+    <Compile Include="Rate\RateCurrencyEntity.cs" />
+    <Compile Include="Rate\RateDimensionsEntity.cs" />
+    <Compile Include="Rate\RatePackageEntity.cs" />
+    <Compile Include="Rate\RateProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rate\RateResultEntity.cs" />
+    <Compile Include="Rate\RateShipmentEntity.cs" />
+    <Compile Include="SDKUtils.cs" />
+    <Compile Include="Rate\ShipAddressEntity.cs" />
+    <Compile Include="Street\AddressKeyFormatEntity.cs" />
+    <Compile Include="Street\StreeResultEntity.cs" />
+    <Compile Include="Street\StreetProvider.cs" />
+    <Compile Include="Street\XAVRequestEntity.cs" />
+    <Compile Include="TNT\TNTAddressEntity.cs" />
+    <Compile Include="TNT\TNTArrivalResultEntity.cs" />
+    <Compile Include="TNT\TNTProvider.cs" />
+    <Compile Include="TNT\TNTShipmentWeightEntity.cs" />
+    <Compile Include="TNT\TNTTimeInTransitEntity.cs" />
+    <Compile Include="TopClientDefault.cs" />
+    <Compile Include="TopDictionary.cs" />
+    <Compile Include="TopUtils.cs" />
+    <Compile Include="VoidShip\VoidShipProvider.cs" />
+    <Compile Include="VoidShip\VoidShipResultEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NegotiatedRateShipment\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
