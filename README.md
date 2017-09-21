@@ -29,3 +29,14 @@ https://github.com/hechenqingyuan/gitwms
 吉特打印小软件
 
 https://github.com/hechenqingyuan/gitprint
+
+
+#### 技术支持
+
+技术支持:15800466429
+
+QQ:821865130
+
+QQ群: 142050808 88718955
+
+博客地址:http://www.cnblogs.com/qingyuan/
