@@ -40,3 +40,18 @@ QQ:821865130
 QQ群: 142050808 88718955
 
 博客地址:http://www.cnblogs.com/qingyuan/
+
+
+### 项目演示地址
+
+
+基础版本
+
+http://www.gitwms.com/
+
+
+云服务版本
+
+http://yun.gitwms.com/
+
+更多案例请联系我
