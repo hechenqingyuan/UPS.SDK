@@ -11,9 +11,9 @@ namespace UPS.SDK.Rate
     {
         public RateShipmentEntity()
         {
-            Service = new JObject();
-            Service.Add("Code", "03");
-            Service.Add("Description", "ServiceCodeDescription");
+            //Service = new JObject();
+            //Service.Add("Code", "03");
+            //Service.Add("Description", "ServiceCodeDescription");
 
             ShipmentRatingOptions = new JObject();
             ShipmentRatingOptions.Add("NegotiatedRatesIndicator","");
@@ -27,8 +27,16 @@ namespace UPS.SDK.Rate
 
         public RatePackageEntity Package { get; set; }
 
-        public JObject Service { get; set; }
-
         public JObject ShipmentRatingOptions { get; set; }
+
+        public RateServiceEntity Service { get; set; }
+
+
+        //public JObject Service { get; set; }
+
+        /// <summary>
+        /// 参考服务编码
+        /// </summary>
+        //public string ServiceCode { get; set; }
     }
 }

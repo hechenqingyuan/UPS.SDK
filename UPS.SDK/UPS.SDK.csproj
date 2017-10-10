@@ -77,6 +77,7 @@
     <Compile Include="Rate\RateProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rate\RateResultEntity.cs" />
+    <Compile Include="Rate\RateServiceEntity.cs" />
     <Compile Include="Rate\RateShipmentEntity.cs" />
     <Compile Include="SDKUtils.cs" />
     <Compile Include="Rate\ShipAddressEntity.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="TopClientDefault.cs" />
     <Compile Include="TopDictionary.cs" />
     <Compile Include="TopUtils.cs" />
+    <Compile Include="UPSServiceCode.cs" />
     <Compile Include="VoidShip\VoidShipProvider.cs" />
     <Compile Include="VoidShip\VoidShipResultEntity.cs" />
   </ItemGroup>

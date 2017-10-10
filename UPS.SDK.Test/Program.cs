@@ -12,6 +12,7 @@ namespace UPS.SDK.Test
         static void Main(string[] args)
         {
             RateShipmentEntity entity = new RateShipmentEntity();
+            entity.Service = new RateServiceEntity() { Code="03" };
             entity.Shipper = new ShipAddressEntity()
             {
                 Name = "Shipper Name",
@@ -20,12 +21,9 @@ namespace UPS.SDK.Test
                 {
                     CountryCode = "US",
                     StateProvinceCode = "CA",
-                    City = "Montclair",
+                    City = "",
                     PostalCode = "91763",
                     AddressLine = new List<string>()
-                    {
-                        "8960 Central Ave",
-                    }
                 }
             };
             entity.ShipFrom = new ShipAddressEntity()
@@ -36,12 +34,9 @@ namespace UPS.SDK.Test
                 {
                     CountryCode = "US",
                     StateProvinceCode = "CA",
-                    City = "Montclair",
+                    City = "",
                     PostalCode = "91763",
                     AddressLine = new List<string>()
-                    {
-                        "8960 Central Ave",
-                    }
                 }
             };
             entity.ShipTo = new ShipAddressEntity()
@@ -52,18 +47,15 @@ namespace UPS.SDK.Test
                 {
                     CountryCode = "US",
                     StateProvinceCode = "CA",
-                    City = "Burbank",
+                    City = "",
                     PostalCode = "91502",
                     AddressLine = new List<string>()
-                    {
-                        "1501 N Victory Pl",
-                    }
                 }
             };
             entity.Package = new RatePackageEntity()
             {
-                Dimensions = new RateDimensionsEntity() { Length = "5", Width = "5", Height = "5" },
-                PackageWeight = new PackageWeightEntity() { Weight = "5" }
+                Dimensions = new RateDimensionsEntity() { Length = "2", Width = "2", Height = "2" },
+                PackageWeight = new PackageWeightEntity() { Weight = "2" }
             };
             RateProvider provider = new RateProvider();
             provider.Shipment = entity;
